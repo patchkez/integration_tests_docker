@@ -5,10 +5,10 @@
 
 ## How it works
 - User will install docker on his machine
-- afterthat  integration_tests repo must be cloned to his PC/laptop
-- runs wrapper script which will pull needed docker containers
-- script can than start container with preinstalled ansible and will mount volume containing playbooks
- - after this task si completed, wrapper script can be started again with py.test command and specified test
+- integration_tests repo is cloned to his PC/laptop
+- wrapper script executed which will pull needed docker containers
+- script starts ansible container and mounts volume containing playbooks
+- wrapper script started again with py.test command and specified test
 - this will start another container which will mount volume (integration_tests / yaml cloned repos) , start VNC server with selenium
 - user then can connect to localhost VNC port and watch tests running
 - after automated test is completed (successfully or failed), container is exited
@@ -66,7 +66,7 @@ You can solve this issue by TODOD.
 ## Initial installation
 ```
 export PROJECTS="${HOME}/projects"
-source <(curl -sL https://git.io/vMMbQ)
+source <(curl -sL https://git.io/fpZ7w)
 ```
 
 <!---
