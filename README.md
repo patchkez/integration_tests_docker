@@ -20,6 +20,7 @@ We have 3 Docker images (all Fedora 23 based):
 - integration_tests - is the main image which will be used for executing py.test, ipython, vnc commands
 Both images are linked to integration_tests_base image, so when any change to this image is detected, these 2 images will be rebuilt automatically by Dockerhub
 
+
 - bash wrapper script which is responsible:
 	- cloning integration_tests and repos
 	- starting/stopping containers with different arguments, volumes
